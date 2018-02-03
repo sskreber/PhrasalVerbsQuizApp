@@ -232,23 +232,23 @@ public class MediumActivity extends AppCompatActivity {
         totalScore = 0;
         RadioButton correctQ1 = findViewById(R.id.mediumQ1op4);
         if (correctQ1.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
         RadioButton correctQ2 = findViewById(R.id.mediumQ2op3);
         if (correctQ2.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
         RadioButton correctQ3 = findViewById(R.id.mediumQ3op3);
         if (correctQ3.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
         RadioButton correctQ4 = findViewById(R.id.mediumQ4op1);
         if (correctQ4.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
         RadioButton correctQ5 = findViewById(R.id.mediumQ5op2);
         if (correctQ5.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
 
         /**

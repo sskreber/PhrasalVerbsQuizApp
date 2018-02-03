@@ -203,19 +203,19 @@ public class HardActivity extends AppCompatActivity {
         totalScore = 0;
         RadioButton correctQ1 = findViewById(R.id.hardQ1op2);
         if (correctQ1.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
         RadioButton correctQ2 = findViewById(R.id.hardQ2op3);
         if (correctQ2.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
         RadioButton correctQ3 = findViewById(R.id.hardQ3op2);
         if (correctQ3.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
         RadioButton correctQ4 = findViewById(R.id.hardQ4op4);
         if (correctQ4.isChecked()) {
-            totalScore += 1;
+            totalScore ++;
         }
 
         /**
@@ -314,13 +314,13 @@ public class HardActivity extends AppCompatActivity {
         EditText textQ9Text = findViewById(R.id.answerQ9);
         String textQ9 = textQ9Text.getText().toString();
         if (textQ9.equalsIgnoreCase(getString(R.string.correctAnswerQ9))) {
-            totalScore += 1;
+            totalScore ++;
         }
 
         EditText text10Text = findViewById(R.id.answerQ10);
         String text10 = text10Text.getText().toString();
         if (text10.equalsIgnoreCase(getString(R.string.correctAnswerQ10))) {
-            totalScore += 1;
+            totalScore ++;
         }
 
         displayResult(totalScore);
