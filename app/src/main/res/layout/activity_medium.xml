@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MediumActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ModeStyle"
+            android:text="@string/mediumMode" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question1" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q1_medium" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q1_medium_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/mediumQ1op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q1_medium_op1" />
+
+            <RadioButton
+                android:id="@+id/mediumQ1op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q1_medium_op2" />
+
+            <RadioButton
+                android:id="@+id/mediumQ1op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q1_medium_op3" />
+
+            <RadioButton
+                android:id="@+id/mediumQ1op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q1_medium_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question2" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q2_medium" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q2_medium_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/mediumQ2op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q2_medium_op1" />
+
+            <RadioButton
+                android:id="@+id/mediumQ2op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q2_medium_op2" />
+
+            <RadioButton
+                android:id="@+id/mediumQ2op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q2_medium_op3" />
+
+            <RadioButton
+                android:id="@+id/mediumQ2op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q2_medium_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question3" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q3_medium" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q3_medium_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/mediumQ3op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q3_medium_op1" />
+
+            <RadioButton
+                android:id="@+id/mediumQ3op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q3_medium_op2" />
+
+            <RadioButton
+                android:id="@+id/mediumQ3op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q3_medium_op3" />
+
+            <RadioButton
+                android:id="@+id/mediumQ3op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q3_medium_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question4" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q4_medium" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q4_medium_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/mediumQ4op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q4_medium_op1" />
+
+            <RadioButton
+                android:id="@+id/mediumQ4op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q4_medium_op2" />
+
+            <RadioButton
+                android:id="@+id/mediumQ4op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q4_medium_op3" />
+
+            <RadioButton
+                android:id="@+id/mediumQ4op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q4_medium_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question5" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q5_medium" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q5_medium_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/mediumQ5op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q5_medium_op1" />
+
+            <RadioButton
+                android:id="@+id/mediumQ5op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q5_medium_op2" />
+
+            <RadioButton
+                android:id="@+id/mediumQ5op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q5_medium_op3" />
+
+            <RadioButton
+                android:id="@+id/mediumQ5op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q5_medium_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question6" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q6_medium" />
+
+        <CheckBox
+            android:id="@+id/mediumQ6op1"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q6_medium_op1" />
+
+        <CheckBox
+            android:id="@+id/mediumQ6op2"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q6_medium_op2" />
+
+        <CheckBox
+            android:id="@+id/mediumQ6op3"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q6_medium_op3" />
+
+        <CheckBox
+            android:id="@+id/mediumQ6op4"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q6_medium_op4" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question7" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q7_medium" />
+
+        <CheckBox
+            android:id="@+id/mediumQ7op1"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q7_medium_op1" />
+
+        <CheckBox
+            android:id="@+id/mediumQ7op2"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q7_medium_op2" />
+
+        <CheckBox
+            android:id="@+id/mediumQ7op3"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q7_medium_op3" />
+
+        <CheckBox
+            android:id="@+id/mediumQ7op4"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q7_medium_op4" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question8" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q8_medium" />
+
+        <CheckBox
+            android:id="@+id/mediumQ8op1"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q8_medium_op1" />
+
+        <CheckBox
+            android:id="@+id/mediumQ8op2"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q8_medium_op2" />
+
+        <CheckBox
+            android:id="@+id/mediumQ8op3"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q8_medium_op3" />
+
+        <CheckBox
+            android:id="@+id/mediumQ8op4"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q8_medium_op4" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question9" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q9_medium" />
+
+        <CheckBox
+            android:id="@+id/mediumQ9op1"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q9_medium_op1" />
+
+        <CheckBox
+            android:id="@+id/mediumQ9op2"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q9_medium_op2" />
+
+        <CheckBox
+            android:id="@+id/mediumQ9op3"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q9_medium_op3" />
+
+        <CheckBox
+            android:id="@+id/mediumQ9op4"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q9_medium_op4" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question10" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q10_medium" />
+
+        <CheckBox
+            android:id="@+id/mediumQ10op1"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q10_medium_op1" />
+
+        <CheckBox
+            android:id="@+id/mediumQ10op2"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q10_medium_op2" />
+
+        <CheckBox
+            android:id="@+id/mediumQ10op3"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q10_medium_op3" />
+
+        <CheckBox
+            android:id="@+id/mediumQ10op4"
+            style="@style/CheckBoxQuiz"
+            android:text="@string/q10_medium_op4" />
+
+        <TextView
+            android:id="@+id/resultText"
+            style="@style/ResultsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:text="" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingOrMar_L"
+            android:layout_marginTop="@dimen/paddingOrMar_L"
+            android:background="#FF8F00"
+            android:onClick="submitQuiz"
+            android:text="@string/submit"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</ScrollView>
+

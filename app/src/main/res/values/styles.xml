@@ -1,0 +1,77 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#8BC34A</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorPrimaryDark">#689F38</item>
+        <item name="colorAccent">#FF9800</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">#C5E1A5</item>
+    </style>
+
+    <style name="RadioGroupQuiz" parent="AppTheme">
+        <item name="android:paddingLeft">@dimen/paddingOrMar_L</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="RadioButtonQuiz" parent="AppTheme">
+        <item name="android:paddingLeft">@dimen/paddingOrMar_L</item>
+        <item name="android:drawablePadding">@dimen/paddingOrMar_L</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#00796B</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CheckBoxQuiz" parent="RadioButtonQuiz">
+        <item name="android:layout_marginLeft">@dimen/paddingOrMar_L</item>
+    </style>
+
+    <style name="Question" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/paddingOrMar_L</item>
+        <item name="android:paddingBottom">@dimen/paddingOrMar_S</item>
+        <item name="android:paddingLeft">@dimen/paddingOrMar_S</item>
+        <item name="android:paddingRight">@dimen/paddingOrMar_S</item>
+        <item name="android:textAllCaps">true</item>4
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#E65100</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="ModeStyle" parent="Question">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:background">@color/colorMode</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="FullSentence" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/paddingOrMar_L</item>
+        <item name="android:paddingLeft">@dimen/paddingOrMar_S</item>
+        <item name="android:paddingRight">@dimen/paddingOrMar_S</item>
+        <item name="android:textColor">#FF6F00</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ResultsTextView" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/paddingOrMar_L</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ExampleSentence" parent="FullSentence">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

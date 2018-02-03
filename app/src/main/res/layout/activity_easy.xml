@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.EasyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ModeStyle"
+            android:text="@string/easyMode" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question1" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q1_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q1_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ1op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q1_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ1op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q1_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ1op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q1_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ1op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q1_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question2" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q2_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q2_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ2op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q2_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ2op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q2_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ2op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q2_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ2op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q2_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question3" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q3_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q3_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ3op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q3_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ3op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q3_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ3op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q3_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ3op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q3_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question4" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q4_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q4_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ4op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q4_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ4op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q4_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ4op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q4_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ4op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q4_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question5" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q5_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q5_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ5op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q5_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ5op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q5_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ5op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q5_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ5op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q5_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question6" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q6_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q6_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ6op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q6_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ6op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q6_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ6op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q6_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ6op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q6_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question7" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q7_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q7_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ7op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q7_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ7op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q7_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ7op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q7_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ7op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q7_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question8" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q8_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q8_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ8op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q8_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ8op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q8_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ8op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q8_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ8op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q8_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question9" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q9_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q9_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ9op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q9_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ9op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q9_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ9op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q9_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ9op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q9_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question10" />
+
+        <TextView
+            style="@style/FullSentence"
+            android:paddingTop="@dimen/paddingOrMar_L"
+            android:text="@string/q10_easy" />
+
+        <TextView
+            style="@style/ExampleSentence"
+            android:text="@string/q10_easy_context" />
+
+        <RadioGroup style="@style/RadioGroupQuiz">
+
+            <RadioButton
+                android:id="@+id/easyQ10op1"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q10_easy_op1" />
+
+            <RadioButton
+                android:id="@+id/easyQ10op2"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q10_easy_op2" />
+
+            <RadioButton
+                android:id="@+id/easyQ10op3"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q10_easy_op3" />
+
+            <RadioButton
+                android:id="@+id/easyQ10op4"
+                style="@style/RadioButtonQuiz"
+                android:text="@string/q10_easy_op4" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/resultText"
+            style="@style/ResultsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:text="" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingOrMar_L"
+            android:layout_marginTop="@dimen/paddingOrMar_L"
+            android:background="#FF8F00"
+            android:onClick="submitQuiz"
+            android:text="@string/submit"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</ScrollView>

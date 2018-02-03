@@ -1,0 +1,247 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="easyMode">Easy mode</string>
+    <string name="mediumMode">Medium mode</string>
+    <string name="hardMode">Hard mode</string>
+
+    <string name="name">Name</string>
+    <string name="difficulty_level">Difficulty level</string>
+    <string name="hard">Hard</string>
+    <string name="medium">Medium</string>
+    <string name="easy">Easy</string>
+    <string name="ready">Are you ready?</string>
+    <string name="start_quiz">Start quiz</string>
+    <string name="submit">Submit</string>
+    <string name="hintHard">to...(type the rest here)</string>
+
+    <string name="question1">Question 1</string>
+    <string name="question2">Question 2</string>
+    <string name="question3">Question 3</string>
+    <string name="question4">Question 4</string>
+    <string name="question5">Question 5</string>
+    <string name="question6">Question 6</string>
+    <string name="question7">Question 7</string>
+    <string name="question8">Question 8</string>
+    <string name="question9">Question 9</string>
+    <string name="question10">Question 10</string>
+
+    //Questions for the Easy mode//
+
+    <string name="q1_easy">What does BREAK DOWN mean?</string>
+    <string name="q1_easy_context">After failing her exam, she broke down and cried.</string>
+    <string name="q1_easy_op1">lose control over one\'s emotions</string>
+    <string name="q1_easy_op2">go insane or become very angry</string>
+    <string name="q1_easy_op3">stop working and take a break</string>
+    <string name="q1_easy_op4">realise something important</string>
+
+    <string name="q2_easy">What does DROP IN mean?</string>
+    <string name="q2_easy_context">If you\'re in LA that time, feel free to drop in.</string>
+    <string name="q2_easy_op1">pay a visit</string>
+    <string name="q2_easy_op2">go home</string>
+    <string name="q2_easy_op3">leave the city</string>
+    <string name="q2_easy_op4">go ahead and die</string>
+
+    <string name="q3_easy">What does GIVE AWAY mean here?</string>
+    <string name="q3_easy_context">His fake English accent gave him away.</string>
+    <string name="q3_easy_op1">humiliate him</string>
+    <string name="q3_easy_op2">make him lose his job</string>
+    <string name="q3_easy_op3">betray him</string>
+    <string name="q3_easy_op4">make him popular</string>
+
+    <string name="q4_easy">What does HANG ONTO mean?</string>
+    <string name="q4_easy_context">I suggest you hang onto this job for another year.</string>
+    <string name="q4_easy_op1">get rid of</string>
+    <string name="q4_easy_op2">keep</string>
+    <string name="q4_easy_op3">improve at</string>
+    <string name="q4_easy_op4">make the best of</string>
+
+    <string name="q5_easy">What does LIVE UP TO mean?</string>
+    <string name="q5_easy_context">This concert totally lived up to my expectations!</string>
+    <string name="q5_easy_op1">disappoint someone badly</string>
+    <string name="q5_easy_op2">cheer up someone</string>
+    <string name="q5_easy_op3">reach an expected standard</string>
+    <string name="q5_easy_op4">scare someone completely</string>
+
+    <string name="q6_easy">What does MAKE OUT mean here?</string>
+    <string name="q6_easy_context">I couldn\'t make out what he said.</string>
+    <string name="q6_easy_op1">manage to see/understand</string>
+    <string name="q6_easy_op2">misunderstand someone</string>
+    <string name="q6_easy_op3">kiss someone</string>
+    <string name="q6_easy_op4">agree with something</string>
+
+    <string name="q7_easy">What does LOOK SOMEONE UP mean?</string>
+    <string name="q7_easy_context">Look me up, I\'m in the book.</string>
+    <string name="q7_easy_op1">respect someone</string>
+    <string name="q7_easy_op2">believe someone</string>
+    <string name="q7_easy_op3">help out someone</string>
+    <string name="q7_easy_op4">visit someone</string>
+
+    <string name="q8_easy">What does PUT UP WITH mean?</string>
+    <string name="q8_easy_context">Should I put up with all this nonsense?</string>
+    <string name="q8_easy_op1">place somewhere high</string>
+    <string name="q8_easy_op2">tolerate</string>
+    <string name="q8_easy_op3">avoid listening to</string>
+    <string name="q8_easy_op4">ignore</string>
+
+    <string name="q9_easy">What does TURN DOWN mean?</string>
+    <string name="q9_easy_context">I\'m going to make him an offer he cannot turn down.</string>
+    <string name="q9_easy_op1">accept</string>
+    <string name="q9_easy_op2">appreciate</string>
+    <string name="q9_easy_op3">dislike</string>
+    <string name="q9_easy_op4">refuse</string>
+
+    <string name="q10_easy">What does TELL OFF mean?</string>
+    <string name="q10_easy_context">I told him off for behaving like that.</string>
+    <string name="q10_easy_op1">remind someone to be nice</string>
+    <string name="q10_easy_op2">praise someone warmly</string>
+    <string name="q10_easy_op3">scold someone</string>
+    <string name="q10_easy_op4">warn about being too kind</string>
+
+    //Questions for the Medium mode//
+
+    <string name="q1_medium">What does BRING ABOUT mean?</string>
+    <string name="q1_medium_context">His downfall was brought about by his thirst for power.</string>
+    <string name="q1_medium_op1">stop something</string>
+    <string name="q1_medium_op2">influence something</string>
+    <string name="q1_medium_op3">improve the situation</string>
+    <string name="q1_medium_op4">cause to happen</string>
+
+    <string name="q2_medium">What does COUNT ON mean?</string>
+    <string name="q2_medium_context">My help? Sure, you can count on it!</string>
+    <string name="q2_medium_op1">make use of</string>
+    <string name="q2_medium_op2">expect to happen</string>
+    <string name="q2_medium_op3">rely on</string>
+    <string name="q2_medium_op4">give up on</string>
+
+    <string name="q3_medium">What does END UP mean?</string>
+    <string name="q3_medium_context">He ended up having to ask for help.</string>
+    <string name="q3_medium_op1">be forced to do</string>
+    <string name="q3_medium_op2">finish an activity</string>
+    <string name="q3_medium_op3">finish in a certain way/place</string>
+    <string name="q3_medium_op4">decide to do something</string>
+
+    <string name="q4_medium">What does GET ACROSS mean?</string>
+    <string name="q4_medium_context">Sheila didn\'t manage to get the message across.</string>
+    <string name="q4_medium_op1">be understood</string>
+    <string name="q4_medium_op2">place something somewhere</string>
+    <string name="q4_medium_op3">understand without difficulty</string>
+    <string name="q4_medium_op4">deliver, spread</string>
+
+    <string name="q5_medium">What does GET ROUND TO mean?</string>
+    <string name="q5_medium_context">Project 3? I still haven\'t got round to coding it.</string>
+    <string name="q5_medium_op1">manage to, be able to</string>
+    <string name="q5_medium_op2">find time to do something</string>
+    <string name="q5_medium_op3">go around asking about something</string>
+    <string name="q5_medium_op4">manage to be exempt from something</string>
+
+    <string name="q6_medium">What does MISS OUT mean?</string>
+    <string name="q6_medium_op1">fail to include</string>
+    <string name="q6_medium_op2">miss someone</string>
+    <string name="q6_medium_op3">fail to catch</string>
+    <string name="q6_medium_op4">lose a chance</string>
+
+    <string name="q7_medium">What does FALL FOR mean?</string>
+    <string name="q7_medium_op1">move clumsily, stumble</string>
+    <string name="q7_medium_op2">fall in love with someone</string>
+    <string name="q7_medium_op3">stumble onto the ground</string>
+    <string name="q7_medium_op4">be deceived by, believe something</string>
+
+    <string name="q8_medium">What does BRING ON mean?</string>
+    <string name="q8_medium_op1">cause trouble to oneself</string>
+    <string name="q8_medium_op2">deliver swiftly</string>
+    <string name="q8_medium_op3">cause an illness</string>
+    <string name="q8_medium_op4">begin an activity</string>
+
+    <string name="q9_medium">What does CARRY OFF mean?</string>
+    <string name="q9_medium_op1">complete successfully</string>
+    <string name="q9_medium_op2">finish without fault</string>
+    <string name="q9_medium_op3">go away</string>
+    <string name="q9_medium_op4">lose an opportunity</string>
+
+    <string name="q10_medium">What does END UP mean?</string>
+    <string name="q10_medium_op1">finish a task completely</string>
+    <string name="q10_medium_op2">finish in a certain way</string>
+    <string name="q10_medium_op3">finish in a certain place</string>
+    <string name="q10_medium_op4">stop an activity prematurely</string>
+
+    //Questions for the Hard mode//
+
+    <string name="q1_hard">What does CATCH ON mean?</string>
+    <string name="q1_hard_context">This new song is beginning to catch on.</string>
+    <string name="q1_hard_op1">go on one\'s nerves</string>
+    <string name="q1_hard_op2">become popular</string>
+    <string name="q1_hard_op3">go out of fashion</string>
+    <string name="q1_hard_op4">come to one\'s attention</string>
+
+    <string name="q2_hard">What does DROP BY mean?</string>
+    <string name="q2_hard_context">Do drop by if you\'re in the neighborhood.</string>
+    <string name="q2_hard_op1">visit a relative</string>
+    <string name="q2_hard_op2">fall into a trap</string>
+    <string name="q2_hard_op3">pay a visit</string>
+    <string name="q2_hard_op4">make a phone call</string>
+
+    <string name="q3_hard">What does GET OVER WITH mean?</string>
+    <string name="q3_hard_context">Alright, let\'s get this thing over with.</string>
+    <string name="q3_hard_op1">finish a successful business transaction</string>
+    <string name="q3_hard_op2">come to the end of something unpleasant</string>
+    <string name="q3_hard_op3">settle an old debt</string>
+    <string name="q3_hard_op4">complete a dangerous activity</string>
+
+    <string name="q4_hard">What does GO OFF mean?</string>
+    <string name="q4_hard_context">I suspect this milk has gone off a century ago.</string>
+    <string name="q4_hard_op1">go missing</string>
+    <string name="q4_hard_op2">be hidden from view</string>
+    <string name="q4_hard_op3">get stolen</string>
+    <string name="q4_hard_op4">become bad</string>
+
+    <string name="q5_hard">What does COME UP AGAINST mean?</string>
+    <string name="q5_hard_op1">meet a difficulty</string>
+    <string name="q5_hard_op2">walk into something</string>
+    <string name="q5_hard_op3">see something unexpected</string>
+    <string name="q5_hard_op4">have a problem</string>
+
+    <string name="q6_hard">What does HAVE IT IN FOR SOMEONE mean?</string>
+    <string name="q6_hard_op1">be unkind to someone on purpose</string>
+    <string name="q6_hard_op2">possess an item and lend it</string>
+    <string name="q6_hard_op3">share something with someone</string>
+    <string name="q6_hard_op4">be angry at someone</string>
+
+    <string name="q7_hard">What does LOOK INTO mean?</string>
+    <string name="q7_hard_op1">eye suspiciously</string>
+    <string name="q7_hard_op2">investigate</string>
+    <string name="q7_hard_op3">read up on, research</string>
+    <string name="q7_hard_op4">think over carefully</string>
+
+    <string name="q8_hard">What does POINT OUT mean?</string>
+    <string name="q8_hard_op1">point into a direction</string>
+    <string name="q8_hard_op2">draw attention to a fact</string>
+    <string name="q8_hard_op3">make one\'s point clear</string>
+    <string name="q8_hard_op4">talk about or mention</string>
+
+    <string name="q9_hard">What does HOLD ON mean?</string>
+    <string name="q9_hard_context">Hold on! We\'ve got to talk about this!</string>
+
+    <string name="q10_hard">What does OWN UP TO mean?</string>
+    <string name="q10_hard_context">He owned up to stealing all that cash.</string>
+
+    <string name="correctAnswerQ9">wait</string>
+    <string name="correctAnswerQ10">confess</string>
+
+    <string name="toastEasy1">Life is short- well, I guess you haven\'t wasted it on studying.</string>
+    <string name="toastEasy2">Don\'t give up, there\'s light at the end of the tunnel!</string>
+    <string name="toastEasy3">Not bad, you\'re getting there!</string>
+    <string name="toastEasy4">Adjust the difficulty, you\'re too awesome for this mode!</string>
+
+    <string name="toastMedium1">Are you in the right place? There\'s an easy mode too!</string>
+    <string name="toastMedium2">Congrats, you\'re survived! Even scored some points!</string>
+    <string name="toastMedium3">Getting there! Perfection is near!</string>
+    <string name="toastMedium4">Try the hard mode, oh brave \'n\' wise adventurer!</string>
+
+    <string name="toastHard1">Well, you\'re tried. Now, time for watching some series!</string>
+    <string name="toastHard2">Not bad, dear! Shoot for the stars!</string>
+    <string name="toastHard3">Oh really? Becoming British are we?</string>
+    <string name="toastHard4">Go back to Breaking Bad, you\'ve aced this quiz!</string>
+
+</resources>
