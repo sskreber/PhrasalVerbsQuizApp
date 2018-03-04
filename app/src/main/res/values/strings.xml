@@ -229,17 +229,17 @@
     <string name="correctAnswerQ9">wait</string>
     <string name="correctAnswerQ10">confess</string>
 
-    <string name="toastEasy1">Life is short- well, I guess you haven\'t wasted it on studying.</string>
+    <string name="toastEasy1">Life is short&#8230; well, I guess you haven\'t wasted it on studying.</string>
     <string name="toastEasy2">Don\'t give up, there\'s light at the end of the tunnel!</string>
     <string name="toastEasy3">Not bad, you\'re getting there!</string>
     <string name="toastEasy4">Adjust the difficulty, you\'re too awesome for this mode!</string>
 
     <string name="toastMedium1">Are you in the right place? There\'s an easy mode too!</string>
-    <string name="toastMedium2">Congrats, you\'re survived! Even scored some points!</string>
+    <string name="toastMedium2">Congrats, you\'ve survived! Even scored some points!</string>
     <string name="toastMedium3">Getting there! Perfection is near!</string>
-    <string name="toastMedium4">Try the hard mode, oh brave \'n\' wise adventurer!</string>
+    <string name="toastMedium4">Try the hard mode, oh brave &amp; wise adventurer!</string>
 
-    <string name="toastHard1">Well, you\'re tried. Now, time for watching some series!</string>
+    <string name="toastHard1">Well, you\'ve tried. Now, time for watching some series!</string>
     <string name="toastHard2">Not bad, dear! Shoot for the stars!</string>
     <string name="toastHard3">Oh really? Becoming British are we?</string>
     <string name="toastHard4">Go back to Breaking Bad, you\'ve aced this quiz!</string>
