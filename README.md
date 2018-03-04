@@ -18,7 +18,7 @@ INTERESTING FEATURES:
 - Half points: in the medium and hard mode, it is possible to get half a score for an answer, if the user only gets one out of the two check box based answers right. 
 - Name field: user gets to enter their name on the main activity page, which gets stored, saved and brought into the new activity (by the use of intents), and so user gets to called by their name in the displayed results message. 
 - The ongoing and/or total score, the entered name, and all the selected and typed-in answers get saved with onSaveInstance in case of device rotation or the user temporarily cheating on us by temporarily using another app.
-- Since it's 10 questions per level, the app is constructed of altogether a whooping number of 30 questions! 
+- Since it's 10 questions per level, the app consists of altogether 30 questions! 
 - ScrollView: app looks okay in both rotation modes and on smaller screens too (both the main activity and the three difficulty mode-based activities).
 
 
