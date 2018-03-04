@@ -6,8 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.quizapp.MainActivity"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    tools:context="com.example.android.quizapp.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,12 +23,13 @@
                 android:id="@+id/name_box"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/paddingOrMar_M"
-                android:paddingRight="@dimen/paddingOrMar_M"
                 android:layout_marginBottom="@dimen/paddingOrMar_S"
                 android:layout_marginTop="@dimen/paddingOrMar_S"
                 android:hint="@string/name"
-                android:inputType="textCapWords">
+                android:inputType="textCapWords"
+                android:paddingLeft="@dimen/paddingOrMar_M"
+                android:paddingRight="@dimen/paddingOrMar_M">
+
                 <requestFocus />
 
             </EditText>
@@ -36,21 +37,21 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingOrMar_M"
+                android:gravity="center_horizontal"
                 android:paddingLeft="@dimen/paddingOrMar_M"
                 android:paddingRight="@dimen/paddingOrMar_M"
-                android:layout_marginBottom="@dimen/paddingOrMar_M"
                 android:text="@string/difficulty_level"
-                android:textAllCaps="true"
-                android:gravity="center_horizontal"/>
+                android:textAllCaps="true" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/paddingOrMar_M"
-                android:paddingRight="@dimen/paddingOrMar_M"
-                android:paddingBottom="@dimen/paddingOrMar_XXXL"
+                android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:paddingBottom="@dimen/paddingOrMar_XXXL"
+                android:paddingLeft="@dimen/paddingOrMar_M"
+                android:paddingRight="@dimen/paddingOrMar_M">
 
                 <RadioButton
                     android:id="@+id/difficultyHardButton"
@@ -77,23 +78,26 @@
                     android:text="@string/easy" />
             </RadioGroup>
 
+            <!-- The "Bridge over River in City" image was created by
+        Pixabay at www.pexels.com-->
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/bigben_s"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/paddingOrMar_XXXL"
                 android:paddingLeft="@dimen/paddingOrMar_M"
                 android:paddingRight="@dimen/paddingOrMar_M"
-                android:paddingBottom="@dimen/paddingOrMar_XXXL"
-                android:layout_gravity="center_horizontal"/>
+                android:src="@drawable/bigben_s" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/ready"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/paddingOrMar_XXXL"
                 android:paddingLeft="@dimen/paddingOrMar_M"
                 android:paddingRight="@dimen/paddingOrMar_M"
-                android:paddingBottom="@dimen/paddingOrMar_XXXL"
-                android:gravity="center_horizontal"/>
+                android:text="@string/ready" />
 
         </LinearLayout>
 
@@ -101,14 +105,14 @@
             android:id="@+id/startQuizButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/paddingOrMar_M"
-            android:paddingRight="@dimen/paddingOrMar_M"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/paddingOrMar_S"
             android:background="@color/colorStartButton"
+            android:onClick="startQuiz"
+            android:paddingLeft="@dimen/paddingOrMar_M"
+            android:paddingRight="@dimen/paddingOrMar_M"
             android:text="@string/start_quiz"
-            android:textAllCaps="true"
-            android:onClick="startQuiz"/>
+            android:textAllCaps="true" />
 
     </RelativeLayout>
 </ScrollView>
