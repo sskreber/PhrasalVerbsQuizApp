@@ -211,21 +211,25 @@
         <CheckBox
             android:id="@+id/mediumQ6op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox6"
             android:text="@string/q6_medium_op1" />
 
         <CheckBox
             android:id="@+id/mediumQ6op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox6"
             android:text="@string/q6_medium_op2" />
 
         <CheckBox
             android:id="@+id/mediumQ6op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox6"
             android:text="@string/q6_medium_op3" />
 
         <CheckBox
             android:id="@+id/mediumQ6op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox6"
             android:text="@string/q6_medium_op4" />
 
         <TextView
@@ -240,21 +244,25 @@
         <CheckBox
             android:id="@+id/mediumQ7op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox7"
             android:text="@string/q7_medium_op1" />
 
         <CheckBox
             android:id="@+id/mediumQ7op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox7"
             android:text="@string/q7_medium_op2" />
 
         <CheckBox
             android:id="@+id/mediumQ7op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox7"
             android:text="@string/q7_medium_op3" />
 
         <CheckBox
             android:id="@+id/mediumQ7op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox7"
             android:text="@string/q7_medium_op4" />
 
         <TextView
@@ -269,21 +277,25 @@
         <CheckBox
             android:id="@+id/mediumQ8op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox8"
             android:text="@string/q8_medium_op1" />
 
         <CheckBox
             android:id="@+id/mediumQ8op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox8"
             android:text="@string/q8_medium_op2" />
 
         <CheckBox
             android:id="@+id/mediumQ8op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox8"
             android:text="@string/q8_medium_op3" />
 
         <CheckBox
             android:id="@+id/mediumQ8op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox8"
             android:text="@string/q8_medium_op4" />
 
         <TextView
@@ -298,21 +310,25 @@
         <CheckBox
             android:id="@+id/mediumQ9op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox9"
             android:text="@string/q9_medium_op1" />
 
         <CheckBox
             android:id="@+id/mediumQ9op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox9"
             android:text="@string/q9_medium_op2" />
 
         <CheckBox
             android:id="@+id/mediumQ9op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox9"
             android:text="@string/q9_medium_op3" />
 
         <CheckBox
             android:id="@+id/mediumQ9op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox9"
             android:text="@string/q9_medium_op4" />
 
         <TextView
@@ -327,21 +343,25 @@
         <CheckBox
             android:id="@+id/mediumQ10op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox10"
             android:text="@string/q10_medium_op1" />
 
         <CheckBox
             android:id="@+id/mediumQ10op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox10"
             android:text="@string/q10_medium_op2" />
 
         <CheckBox
             android:id="@+id/mediumQ10op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox10"
             android:text="@string/q10_medium_op3" />
 
         <CheckBox
             android:id="@+id/mediumQ10op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox10"
             android:text="@string/q10_medium_op4" />
 
         <TextView

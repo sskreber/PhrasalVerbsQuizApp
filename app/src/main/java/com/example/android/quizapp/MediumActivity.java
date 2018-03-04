@@ -1,24 +1,12 @@
 package com.example.android.quizapp;
 
-import android.content.Intent;
-import android.view.View;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.view.View.OnClickListener;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class MediumActivity extends AppCompatActivity {
 
@@ -66,6 +54,7 @@ public class MediumActivity extends AppCompatActivity {
     static final String MEDIUM_Q10_OP3 = "mediumQ10op3String";
     static final String MEDIUM_Q10_OP4 = "mediumQ10op4String";
     double totalScore;
+
 
     // Pulls out the value of the total score and the selected answers.
 
@@ -232,140 +221,36 @@ public class MediumActivity extends AppCompatActivity {
         totalScore = 0;
         RadioButton correctQ1 = findViewById(R.id.mediumQ1op4);
         if (correctQ1.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ2 = findViewById(R.id.mediumQ2op3);
         if (correctQ2.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ3 = findViewById(R.id.mediumQ3op3);
         if (correctQ3.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ4 = findViewById(R.id.mediumQ4op1);
         if (correctQ4.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ5 = findViewById(R.id.mediumQ5op2);
         if (correctQ5.isChecked()) {
-            totalScore ++;
-        }
-
-        /**
-         * I will need to find a better way to deal with the checkboxes.
-         * (And a more elegant one than using a million if statements per question.)
-         * TODO: find a way to lock the two other boxes once user selected two already.
-         * Right now user can check more than 2 boxes, and the scoring deals with this
-         * instead of making the selection of more than 2 boxes impossible.
-         * If they choose the 2 right answers AND a wrong one, they receive no point.
-         * If they check both wrong answers, they receive no points, no matter what else they check in addition.
-         * If they check one of the right answers and nothing else, or if they check a right answer and a wrong one,
-         * they receive half a point.
-         * If they check both right answers and nothing else, they receive 1 point.
-         */
-
-        CheckBox correctQ6_1 = findViewById(R.id.mediumQ6op1);
-        CheckBox correctQ6_4 = findViewById(R.id.mediumQ6op4);
-        CheckBox incorrectQ6_2 = findViewById(R.id.mediumQ6op2);
-        CheckBox incorrectQ6_3 = findViewById(R.id.mediumQ6op3);
-        if (incorrectQ6_2.isChecked() && incorrectQ6_3.isChecked()) {
-            totalScore = totalScore;
-        } else if (incorrectQ6_2.isChecked() || incorrectQ6_3.isChecked()) {
-            if (correctQ6_1.isChecked() && correctQ6_4.isChecked()) {
-                totalScore = totalScore;
-            }
-        } else if (incorrectQ6_2.isChecked() || incorrectQ6_3.isChecked()) {
-            if (correctQ6_1.isChecked() || correctQ6_4.isChecked()) {
-                totalScore += 0.5;
-            }
-        } else if (correctQ6_1.isChecked() && correctQ6_4.isChecked()) {
             totalScore++;
-        } else if (correctQ6_1.isChecked() || correctQ6_4.isChecked()) {
-            totalScore += 0.5;
         }
 
-        CheckBox correctQ7_2 = findViewById(R.id.mediumQ7op2);
-        CheckBox correctQ7_4 = findViewById(R.id.mediumQ7op4);
-        CheckBox incorrectQ7_1 = findViewById(R.id.mediumQ7op1);
-        CheckBox incorrectQ7_3 = findViewById(R.id.mediumQ7op3);
-        if (incorrectQ7_1.isChecked() && incorrectQ7_3.isChecked()) {
-            totalScore = totalScore;
-        } else if (incorrectQ7_1.isChecked() || incorrectQ7_3.isChecked()) {
-            if (correctQ7_2.isChecked() && correctQ7_4.isChecked()) {
-                totalScore = totalScore;
-            }
-        } else if (incorrectQ7_1.isChecked() || incorrectQ7_3.isChecked()) {
-            if (correctQ7_2.isChecked() || correctQ7_4.isChecked()) {
-                totalScore += 0.5;
-            }
-        } else if (correctQ7_2.isChecked() && correctQ7_4.isChecked()) {
-            totalScore++;
-        } else if (correctQ7_2.isChecked() || correctQ7_4.isChecked()) {
-            totalScore += 0.5;
-        }
+        // Calls on five methods below which score Question 6-10 (all CheckBox-based) and make sure no more than 2 answers are checked.
 
-        CheckBox correctQ8_1 = findViewById(R.id.mediumQ8op1);
-        CheckBox correctQ8_3 = findViewById(R.id.mediumQ8op3);
-        CheckBox incorrectQ8_2 = findViewById(R.id.mediumQ8op2);
-        CheckBox incorrectQ8_4 = findViewById(R.id.mediumQ8op4);
-        if (incorrectQ8_2.isChecked() && incorrectQ8_4.isChecked()) {
-            totalScore = totalScore;
-        } else if (incorrectQ8_2.isChecked() || incorrectQ8_4.isChecked()) {
-            if (correctQ8_1.isChecked() && correctQ8_3.isChecked()) {
-                totalScore = totalScore;
-            }
-        } else if (incorrectQ8_2.isChecked() || incorrectQ8_4.isChecked()) {
-            if (correctQ8_1.isChecked() || correctQ8_3.isChecked()) {
-                totalScore += 0.5;
-            }
-        } else if (correctQ8_1.isChecked() && correctQ8_3.isChecked()) {
-            totalScore++;
-        } else if (correctQ8_1.isChecked() || correctQ8_3.isChecked()) {
-            totalScore += 0.5;
-        }
-
-        CheckBox correctQ9_1 = findViewById(R.id.mediumQ9op1);
-        CheckBox correctQ9_2 = findViewById(R.id.mediumQ9op2);
-        CheckBox incorrectQ9_3 = findViewById(R.id.mediumQ9op3);
-        CheckBox incorrectQ9_4 = findViewById(R.id.mediumQ9op4);
-        if (incorrectQ9_3.isChecked() && incorrectQ9_4.isChecked()) {
-            totalScore = totalScore;
-        } else if (incorrectQ9_3.isChecked() || incorrectQ9_4.isChecked()) {
-            if (correctQ9_1.isChecked() && correctQ9_2.isChecked()) {
-                totalScore = totalScore;
-            }
-        } else if (incorrectQ9_3.isChecked() || incorrectQ9_4.isChecked()) {
-            if (correctQ9_1.isChecked() || correctQ9_2.isChecked()) {
-                totalScore += 0.5;
-            }
-        } else if (correctQ9_1.isChecked() && correctQ9_2.isChecked()) {
-            totalScore++;
-        } else if (correctQ9_1.isChecked() || correctQ9_2.isChecked()) {
-            totalScore += 0.5;
-        }
-
-        CheckBox correctQ10_2 = findViewById(R.id.mediumQ10op2);
-        CheckBox correctQ10_3 = findViewById(R.id.mediumQ10op3);
-        CheckBox incorrectQ10_1 = findViewById(R.id.mediumQ10op1);
-        CheckBox incorrectQ10_4 = findViewById(R.id.mediumQ10op4);
-        if (incorrectQ10_1.isChecked() && incorrectQ10_4.isChecked()) {
-            totalScore = totalScore;
-        } else if (incorrectQ10_1.isChecked() || incorrectQ10_4.isChecked()) {
-            if (correctQ10_2.isChecked() && correctQ10_3.isChecked()) {
-                totalScore = totalScore;
-            }
-        } else if (incorrectQ10_1.isChecked() || incorrectQ10_4.isChecked()) {
-            if (correctQ10_2.isChecked() || correctQ10_3.isChecked()) {
-                totalScore += 0.5;
-            }
-        } else if (correctQ10_2.isChecked() && correctQ10_3.isChecked()) {
-            totalScore++;
-        } else if (correctQ10_2.isChecked() || correctQ10_3.isChecked()) {
-            totalScore += 0.5;
-        }
+        checkBox6(v);
+        checkBox7(v);
+        checkBox8(v);
+        checkBox9(v);
+        checkBox10(v);
 
         displayResult(totalScore);
     }
+
 
     /**
      * Declares a method that displays user's score result in a hitherto null-content text view.
@@ -401,6 +286,7 @@ public class MediumActivity extends AppCompatActivity {
         resetScore();
     }
 
+
     /**
      * Declares a method that gets called as part of the above disPlayResult method (activated when user submits the quiz.
      * Method resets the score to zero.
@@ -410,6 +296,283 @@ public class MediumActivity extends AppCompatActivity {
         totalScore = 0;
     }
 
+
+    //Displays a warning toast message when user tries to tick more than two CheckBoxes.//
+
+    private void toastWarning() {
+        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
+        Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+    }
+
+    /**
+     * Methods checkbox6-10 score Questions 6-10 (all CheckBox-based with 4 answer choices), and make sure no more than 2 answers
+     * are checked per question.
+     */
+
+    public void checkBox6(View view) {
+        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
+        CheckBox correctQ6_1 = findViewById(R.id.mediumQ6op1);
+        CheckBox correctQ6_4 = findViewById(R.id.mediumQ6op4);
+        CheckBox incorrectQ6_2 = findViewById(R.id.mediumQ6op2);
+        CheckBox incorrectQ6_3 = findViewById(R.id.mediumQ6op3);
+        int checkCounter = 0;
+
+        if (correctQ6_1.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ6_1.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (correctQ6_4.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ6_4.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (incorrectQ6_2.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ6_2.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+
+        if (incorrectQ6_3.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ6_3.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+    }
+
+    public void checkBox7(View view) {
+        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
+        CheckBox correctQ7_2 = findViewById(R.id.mediumQ7op2);
+        CheckBox correctQ7_4 = findViewById(R.id.mediumQ7op4);
+        CheckBox incorrectQ7_1 = findViewById(R.id.mediumQ7op1);
+        CheckBox incorrectQ7_3 = findViewById(R.id.mediumQ7op3);
+        int checkCounter = 0;
+
+        if (correctQ7_2.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ7_2.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (correctQ7_4.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ7_4.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (incorrectQ7_1.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ7_1.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+
+        if (incorrectQ7_3.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ7_3.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+    }
+
+    public void checkBox8(View view) {
+        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
+        CheckBox correctQ8_1 = findViewById(R.id.mediumQ8op1);
+        CheckBox correctQ8_3 = findViewById(R.id.mediumQ8op3);
+        CheckBox incorrectQ8_2 = findViewById(R.id.mediumQ8op2);
+        CheckBox incorrectQ8_4 = findViewById(R.id.mediumQ8op4);
+        int checkCounter = 0;
+
+        if (correctQ8_1.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ8_1.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (correctQ8_3.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ8_3.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (incorrectQ8_2.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ8_2.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+
+        if (incorrectQ8_4.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ8_4.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+    }
+
+    public void checkBox9(View view) {
+        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
+        CheckBox correctQ9_1 = findViewById(R.id.mediumQ9op1);
+        CheckBox correctQ9_2 = findViewById(R.id.mediumQ9op2);
+        CheckBox incorrectQ9_3 = findViewById(R.id.mediumQ9op3);
+        CheckBox incorrectQ9_4 = findViewById(R.id.mediumQ9op4);
+        int checkCounter = 0;
+
+        if (correctQ9_1.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ9_1.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (correctQ9_2.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ9_2.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (incorrectQ9_3.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ9_3.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+
+        if (incorrectQ9_4.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ9_4.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+    }
+
+    public void checkBox10(View view) {
+        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
+        CheckBox correctQ10_2 = findViewById(R.id.mediumQ10op2);
+        CheckBox correctQ10_3 = findViewById(R.id.mediumQ10op3);
+        CheckBox incorrectQ10_1 = findViewById(R.id.mediumQ10op1);
+        CheckBox incorrectQ10_4 = findViewById(R.id.mediumQ10op4);
+        int checkCounter = 0;
+
+        if (correctQ10_2.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ10_2.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (correctQ10_3.isChecked()) {
+            checkCounter++;
+            totalScore += 0.5;
+            if (checkCounter > 2) {
+                correctQ10_3.setChecked(false);
+                checkCounter--;
+                totalScore -= 0.5;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        if (incorrectQ10_1.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ10_1.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+
+        if (incorrectQ10_4.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                incorrectQ10_4.setChecked(false);
+                checkCounter--;
+                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
+            } else {
+                totalScore = totalScore;
+            }
+        }
+    }
 }
 
 

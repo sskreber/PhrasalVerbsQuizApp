@@ -174,21 +174,25 @@
         <CheckBox
             android:id="@+id/hardQ5op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox5"
             android:text="@string/q5_hard_op1" />
 
         <CheckBox
             android:id="@+id/hardQ5op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox5"
             android:text="@string/q5_hard_op2" />
 
         <CheckBox
             android:id="@+id/hardQ5op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox5"
             android:text="@string/q5_hard_op3" />
 
         <CheckBox
             android:id="@+id/hardQ5op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox5"
             android:text="@string/q5_hard_op4" />
 
         <TextView
@@ -203,21 +207,25 @@
         <CheckBox
             android:id="@+id/hardQ6op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox6"
             android:text="@string/q6_hard_op1" />
 
         <CheckBox
             android:id="@+id/hardQ6op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox6"
             android:text="@string/q6_hard_op2" />
 
         <CheckBox
             android:id="@+id/hardQ6op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox6"
             android:text="@string/q6_hard_op3" />
 
         <CheckBox
             android:id="@+id/hardQ6op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox6"
             android:text="@string/q6_hard_op4" />
 
         <TextView
@@ -232,21 +240,25 @@
         <CheckBox
             android:id="@+id/hardQ7op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox7"
             android:text="@string/q7_hard_op1" />
 
         <CheckBox
             android:id="@+id/hardQ7op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox7"
             android:text="@string/q7_hard_op2" />
 
         <CheckBox
             android:id="@+id/hardQ7op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox7"
             android:text="@string/q7_hard_op3" />
 
         <CheckBox
             android:id="@+id/hardQ7op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox7"
             android:text="@string/q7_hard_op4" />
 
         <TextView
@@ -261,21 +273,25 @@
         <CheckBox
             android:id="@+id/hardQ8op1"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox8"
             android:text="@string/q8_hard_op1" />
 
         <CheckBox
             android:id="@+id/hardQ8op2"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox8"
             android:text="@string/q8_hard_op2" />
 
         <CheckBox
             android:id="@+id/hardQ8op3"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox8"
             android:text="@string/q8_hard_op3" />
 
         <CheckBox
             android:id="@+id/hardQ8op4"
             style="@style/CheckBoxQuiz"
+            android:onClick="checkBox8"
             android:text="@string/q8_hard_op4" />
 
         <TextView

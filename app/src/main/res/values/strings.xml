@@ -244,4 +244,6 @@
     <string name="toastHard3">Oh really? Becoming British are we?</string>
     <string name="toastHard4">Go back to Breaking Bad, you\'ve aced this quiz!</string>
 
+    <string name="toastChooseMaxTwo">You can\'t choose more than two boxes! Check again!</string>
+
 </resources>
