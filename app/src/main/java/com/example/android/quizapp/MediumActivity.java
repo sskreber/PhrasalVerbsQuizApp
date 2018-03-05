@@ -249,6 +249,7 @@ public class MediumActivity extends AppCompatActivity {
         checkBox10(v);
 
         displayResult(totalScore);
+
     }
 
 
@@ -270,10 +271,10 @@ public class MediumActivity extends AppCompatActivity {
         scoreSummaryTextView.setText(resultMessage);
         TextView submitButton = (TextView) findViewById(R.id.submit);
         submitButton.setVisibility(View.GONE);
-        String toastMedium1 = getString(R.string.toastMedium1);
-        String toastMedium2 = getString(R.string.toastMedium2);
-        String toastMedium3 = getString(R.string.toastMedium3);
-        String toastMedium4 = getString(R.string.toastMedium4);
+        String toastMedium1 = totalScore + getString(R.string.toastMedium1);
+        String toastMedium2 = totalScore + getString(R.string.toastMedium2);
+        String toastMedium3 = totalScore + getString(R.string.toastMedium3);
+        String toastMedium4 = totalScore + getString(R.string.toastMedium4);
         if (totalScore < 4) {
             Toast.makeText(getApplicationContext(), toastMedium1, Toast.LENGTH_LONG).show();
         } else if (totalScore >= 3 && totalScore <= 6) {
@@ -286,7 +287,6 @@ public class MediumActivity extends AppCompatActivity {
         resetScore();
     }
 
-
     /**
      * Declares a method that gets called as part of the above disPlayResult method (activated when user submits the quiz.
      * Method resets the score to zero.
@@ -295,7 +295,6 @@ public class MediumActivity extends AppCompatActivity {
     private void resetScore() {
         totalScore = 0;
     }
-
 
     //Displays a warning toast message when user tries to tick more than two CheckBoxes.//
 

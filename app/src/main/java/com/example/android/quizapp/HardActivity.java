@@ -255,10 +255,10 @@ public class HardActivity extends AppCompatActivity {
         scoreSummaryTextView.setText(resultMessage);
         TextView submitButton = (TextView) findViewById(R.id.submit);
         submitButton.setVisibility(View.GONE);
-        String toastHard1 = getString(R.string.toastHard1);
-        String toastHard2 = getString(R.string.toastHard2);
-        String toastHard3 = getString(R.string.toastHard3);
-        String toastHard4 = getString(R.string.toastHard4);
+        String toastHard1 = totalScore + getString(R.string.toastHard1);
+        String toastHard2 = totalScore + getString(R.string.toastHard2);
+        String toastHard3 = totalScore + getString(R.string.toastHard3);
+        String toastHard4 = totalScore + getString(R.string.toastHard4);
         if (totalScore < 4) {
             Toast.makeText(getApplicationContext(), toastHard1, Toast.LENGTH_LONG).show();
         } else if (totalScore >= 3 && totalScore <= 6) {

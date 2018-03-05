@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textSize_S">14sp</dimen>
+    <dimen name="textSize_SM">16sp</dimen>
+    <dimen name="textSize_SM2">18sp</dimen>
+    <dimen name="textSize_SM3">21sp</dimen>
     <dimen name="textSize_M">24sp</dimen>
     <dimen name="textSize_L">56sp</dimen>
     <dimen name="paddingOrMar_S">8dp</dimen>

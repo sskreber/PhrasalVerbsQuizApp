@@ -1,21 +1,11 @@
 package com.example.android.quizapp;
 
-import android.content.Intent;
-import android.view.View;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.view.View.OnClickListener;
 import android.widget.Toast;
-
-import java.lang.reflect.Method;
 
 public class EasyActivity extends AppCompatActivity {
 
@@ -287,10 +277,10 @@ public class EasyActivity extends AppCompatActivity {
         scoreSummaryTextView.setText(resultMessage);
         TextView submitButton = (TextView) findViewById(R.id.submit);
         submitButton.setVisibility(View.GONE);
-        String toastEasy1 = getString(R.string.toastEasy1);
-        String toastEasy2 = getString(R.string.toastEasy2);
-        String toastEasy3 = getString(R.string.toastEasy3);
-        String toastEasy4 = getString(R.string.toastEasy4);
+        String toastEasy1 = totalScore + getString(R.string.toastEasy1);
+        String toastEasy2 = totalScore + getString(R.string.toastEasy2);
+        String toastEasy3 = totalScore + getString(R.string.toastEasy3);
+        String toastEasy4 = totalScore + getString(R.string.toastEasy4);
         if (totalScore < 4) {
             Toast.makeText(getApplicationContext(), toastEasy1, Toast.LENGTH_LONG).show();
         } else if (totalScore >= 3 && totalScore <= 6) {
