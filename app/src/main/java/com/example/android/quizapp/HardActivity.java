@@ -11,7 +11,10 @@ import android.widget.Toast;
 
 public class HardActivity extends AppCompatActivity {
 
-    // Declares total score, selected answers and typed-in answers as global constants, initializes total score as variable.
+    /**
+     * Declares total score, selected answers and typed-in answers as global constants, initializes total score
+     * and selectedOptions (to count selected answers for each checkbox) as variables.
+     */
 
     static final String TOTALSCORE = "totalScore";
     static final String TEXT_Q9 = "textQ9";
@@ -48,9 +51,11 @@ public class HardActivity extends AppCompatActivity {
     static final String HARD_Q8_OP2 = "hardQ8op2String";
     static final String HARD_Q8_OP3 = "hardQ8op3String";
     static final String HARD_Q8_OP4 = "hardQ8op4String";
-    double totalScore;
+    int totalScore;
     String textQ9;
     String textQ10;
+
+    CheckBox[] selectedOptions = {null, null};
 
     // Pulls out the value of the total score, the selected answers and the typed-in answers.
 
@@ -124,7 +129,7 @@ public class HardActivity extends AppCompatActivity {
         CheckBox hardQ8op4 = (CheckBox) findViewById(R.id.hardQ8op4);
         String hardQ8op4String = hardQ8op4.getText().toString();
 
-        savedInstanceState.putDouble(TOTALSCORE, totalScore);
+        savedInstanceState.putInt(TOTALSCORE, totalScore);
 
         savedInstanceState.putString(HARD_Q1_OP1, hardQ1op1String);
         savedInstanceState.putString(HARD_Q1_OP2, hardQ1op2String);
@@ -184,7 +189,7 @@ public class HardActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        totalScore = savedInstanceState.getDouble(TOTALSCORE);
+        totalScore = savedInstanceState.getInt(TOTALSCORE);
     }
 
     /**
@@ -242,12 +247,11 @@ public class HardActivity extends AppCompatActivity {
      * Method is called when user clicks Submit Quiz button.
      *
      * @param totalScore User's full score calculated upon submitting the quiz.
-     *                   The totalScore variable is a double, as it is possible to score half points with the checkbox answer alternatives.
      *                   Method renders the Submit Quiz button invisible after user clicked on it.
      *                   A customized toast message pops up, its message depending on user's score.
      */
 
-    private void displayResult(double totalScore) {
+    private void displayResult(int totalScore) {
         String name = getIntent().getExtras().getString("name", "name");
         String resultMessage = "Hi " + name + "!";
         resultMessage += "\nYour results: " + totalScore + " p /10 p";
@@ -280,230 +284,123 @@ public class HardActivity extends AppCompatActivity {
         totalScore = 0;
     }
 
-    //Displays a warning toast message when user tries to tick more than two CheckBoxes.//
-
-    private void toastWarning() {
-        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
-        Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-    }
-
     /**
-     * Methods checkbox5-8 score Questions 5-8 (all CheckBox-based with 4 answer choices), and make sure no more than 2 answers
-     * are checked per question.
+     * checkBox5-8 are four methods which score Questions 5-8 (all CheckBox-based) and make sure no more than 2 options are checked per question,
+     * relying on a helper method validateCheckbox (checkBox1, checkBox2, checkBox3, checkBox4).
+     * CREDITS: the creation of the validateCheckbox method and its incorporation into methods checkBox5-8 were all largely due to and based on
+     * the help and suggested code examples of this project's first reviewer, Ali. Thank you!
      */
 
     public void checkBox5(View view) {
-        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
         CheckBox correctQ5_1 = findViewById(R.id.hardQ5op1);
         CheckBox correctQ5_4 = findViewById(R.id.hardQ5op4);
         CheckBox incorrectQ5_2 = findViewById(R.id.hardQ5op2);
         CheckBox incorrectQ5_3 = findViewById(R.id.hardQ5op3);
-        int checkCounter = 0;
 
-        if (correctQ5_1.isChecked()) {
-            checkCounter++;
-            totalScore += 0.5;
-            if (checkCounter > 2) {
-                correctQ5_1.setChecked(false);
-                checkCounter--;
-                totalScore -= 0.5;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            }
-        }
-
-        if (correctQ5_4.isChecked()) {
-            checkCounter++;
-            totalScore += 0.5;
-            if (checkCounter > 2) {
-                correctQ5_4.setChecked(false);
-                checkCounter--;
-                totalScore -= 0.5;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            }
-        }
-
-        if (incorrectQ5_2.isChecked()) {
-            checkCounter++;
-            if (checkCounter > 2) {
-                incorrectQ5_2.setChecked(false);
-                checkCounter--;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            } else {
-                totalScore = totalScore;
-            }
-        }
-
-        if (incorrectQ5_3.isChecked()) {
-            checkCounter++;
-            if (checkCounter > 2) {
-                incorrectQ5_3.setChecked(false);
-                checkCounter--;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            } else {
-                totalScore = totalScore;
-            }
+        validateCheckbox(correctQ5_1, correctQ5_4, incorrectQ5_2, incorrectQ5_3);
+        if ((selectedOptions[0] == correctQ5_1 && selectedOptions[1] == correctQ5_4) ||
+                (selectedOptions[0] == correctQ5_4 && selectedOptions[1] == correctQ5_1)) {
+            totalScore++;
         }
     }
 
     public void checkBox6(View view) {
-        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
         CheckBox correctQ6_1 = findViewById(R.id.hardQ6op1);
         CheckBox correctQ6_3 = findViewById(R.id.hardQ6op3);
         CheckBox incorrectQ6_2 = findViewById(R.id.hardQ6op2);
         CheckBox incorrectQ6_4 = findViewById(R.id.hardQ6op4);
-        int checkCounter = 0;
 
-        if (correctQ6_1.isChecked()) {
-            checkCounter++;
-            totalScore += 0.5;
-            if (checkCounter > 2) {
-                correctQ6_1.setChecked(false);
-                checkCounter--;
-                totalScore -= 0.5;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            }
-        }
-
-        if (correctQ6_3.isChecked()) {
-            checkCounter++;
-            totalScore += 0.5;
-            if (checkCounter > 2) {
-                correctQ6_3.setChecked(false);
-                checkCounter--;
-                totalScore -= 0.5;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            }
-        }
-
-        if (incorrectQ6_2.isChecked()) {
-            checkCounter++;
-            if (checkCounter > 2) {
-                incorrectQ6_2.setChecked(false);
-                checkCounter--;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            } else {
-                totalScore = totalScore;
-            }
-        }
-
-        if (incorrectQ6_4.isChecked()) {
-            checkCounter++;
-            if (checkCounter > 2) {
-                incorrectQ6_4.setChecked(false);
-                checkCounter--;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            } else {
-                totalScore = totalScore;
-            }
+        validateCheckbox(correctQ6_1, correctQ6_3, incorrectQ6_2, incorrectQ6_4);
+        if ((selectedOptions[0] == correctQ6_1 && selectedOptions[1] == correctQ6_3) ||
+                (selectedOptions[0] == correctQ6_3 && selectedOptions[1] == correctQ6_1)) {
+            totalScore++;
         }
     }
 
     public void checkBox7(View view) {
-        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
         CheckBox correctQ7_2 = findViewById(R.id.hardQ7op2);
         CheckBox correctQ7_3 = findViewById(R.id.hardQ7op3);
         CheckBox incorrectQ7_1 = findViewById(R.id.hardQ7op1);
         CheckBox incorrectQ7_4 = findViewById(R.id.hardQ7op4);
-        int checkCounter = 0;
 
-        if (correctQ7_2.isChecked()) {
-            checkCounter++;
-            totalScore += 0.5;
-            if (checkCounter > 2) {
-                correctQ7_2.setChecked(false);
-                checkCounter--;
-                totalScore -= 0.5;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            }
-        }
-
-        if (correctQ7_3.isChecked()) {
-            checkCounter++;
-            totalScore += 0.5;
-            if (checkCounter > 2) {
-                correctQ7_3.setChecked(false);
-                checkCounter--;
-                totalScore -= 0.5;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            }
-        }
-
-        if (incorrectQ7_1.isChecked()) {
-            checkCounter++;
-            if (checkCounter > 2) {
-                incorrectQ7_1.setChecked(false);
-                checkCounter--;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            } else {
-                totalScore = totalScore;
-            }
-        }
-
-        if (incorrectQ7_4.isChecked()) {
-            checkCounter++;
-            if (checkCounter > 2) {
-                incorrectQ7_4.setChecked(false);
-                checkCounter--;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            } else {
-                totalScore = totalScore;
-            }
+        validateCheckbox(correctQ7_2, correctQ7_3, incorrectQ7_1, incorrectQ7_4);
+        if ((selectedOptions[0] == correctQ7_2 && selectedOptions[1] == correctQ7_3) ||
+                (selectedOptions[0] == correctQ7_3 && selectedOptions[1] == correctQ7_2)) {
+            totalScore++;
         }
     }
 
     public void checkBox8(View view) {
-        String toastChooseMaxTwo = getString(R.string.toastChooseMaxTwo);
         CheckBox correctQ8_2 = findViewById(R.id.hardQ8op2);
         CheckBox correctQ8_4 = findViewById(R.id.hardQ8op4);
         CheckBox incorrectQ8_1 = findViewById(R.id.hardQ8op1);
         CheckBox incorrectQ8_3 = findViewById(R.id.hardQ8op3);
-        int checkCounter = 0;
 
-        if (correctQ8_2.isChecked()) {
-            checkCounter++;
-            totalScore += 0.5;
-            if (checkCounter > 2) {
-                correctQ8_2.setChecked(false);
-                checkCounter--;
-                totalScore -= 0.5;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            }
-        }
-
-        if (correctQ8_4.isChecked()) {
-            checkCounter++;
-            totalScore += 0.5;
-            if (checkCounter > 2) {
-                correctQ8_4.setChecked(false);
-                checkCounter--;
-                totalScore -= 0.5;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            }
-        }
-
-        if (incorrectQ8_1.isChecked()) {
-            checkCounter++;
-            if (checkCounter > 2) {
-                incorrectQ8_1.setChecked(false);
-                checkCounter--;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            } else {
-                totalScore = totalScore;
-            }
-        }
-
-        if (incorrectQ8_3.isChecked()) {
-            checkCounter++;
-            if (checkCounter > 2) {
-                incorrectQ8_3.setChecked(false);
-                checkCounter--;
-                Toast.makeText(getApplicationContext(), toastChooseMaxTwo, Toast.LENGTH_LONG).show();
-            } else {
-                totalScore = totalScore;
-            }
+        validateCheckbox(correctQ8_2, correctQ8_4, incorrectQ8_1, incorrectQ8_3);
+        if ((selectedOptions[0] == correctQ8_2 && selectedOptions[1] == correctQ8_4) ||
+                (selectedOptions[0] == correctQ8_4 && selectedOptions[1] == correctQ8_2)) {
+            totalScore++;
         }
     }
 
+    /**
+     * A helper method to provide grounds for methods Checkbox5-8 in making sure no more than 2 options are checked for each checkbox.
+     *
+     * @param checkBox1, checkBox2, checkBox3, checkBox4: options of each checkbox in each individual checkbox-based question.
+     */
+
+    public void validateCheckbox(CheckBox checkBox1, CheckBox checkBox2, CheckBox checkBox3, CheckBox checkBox4) {
+        int checkCounter = 0;
+
+        if (checkBox1.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                checkCounter--;
+                Toast.makeText(this, getString(R.string.toastChooseMaxTwo), Toast.LENGTH_LONG).show();
+                checkBox1.setChecked(false);
+            } else if (checkCounter == 1) {
+                selectedOptions[0] = checkBox1;
+            } else if (checkCounter == 2) {
+                selectedOptions[1] = checkBox1;
+            }
+        }
+        if (checkBox2.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                checkCounter--;
+                Toast.makeText(this, getString(R.string.toastChooseMaxTwo), Toast.LENGTH_LONG).show();
+                checkBox2.setChecked(false);
+            } else if (checkCounter == 1) {
+                selectedOptions[0] = checkBox2;
+            } else if (checkCounter == 2) {
+                selectedOptions[1] = checkBox2;
+            }
+        }
+        if (checkBox3.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                checkCounter--;
+                Toast.makeText(this, getString(R.string.toastChooseMaxTwo), Toast.LENGTH_LONG).show();
+                checkBox3.setChecked(false);
+            } else if (checkCounter == 1) {
+                selectedOptions[0] = checkBox3;
+            } else if (checkCounter == 2) {
+                selectedOptions[1] = checkBox3;
+            }
+        }
+        if (checkBox4.isChecked()) {
+            checkCounter++;
+            if (checkCounter > 2) {
+                checkCounter--;
+                Toast.makeText(this, getString(R.string.toastChooseMaxTwo), Toast.LENGTH_LONG).show();
+                checkBox4.setChecked(false);
+            } else if (checkCounter == 1) {
+                selectedOptions[0] = checkBox4;
+            } else if (checkCounter == 2) {
+                selectedOptions[1] = checkBox4;
+            }
+        }
+    }
 }
 
 

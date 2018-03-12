@@ -218,43 +218,43 @@ public class EasyActivity extends AppCompatActivity {
         totalScore = 0;
         RadioButton correctQ1 = findViewById(R.id.easyQ1op1);
         if (correctQ1.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ2 = findViewById(R.id.easyQ2op1);
         if (correctQ2.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ3 = findViewById(R.id.easyQ3op3);
         if (correctQ3.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ4 = findViewById(R.id.easyQ4op2);
         if (correctQ4.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ5 = findViewById(R.id.easyQ5op3);
         if (correctQ5.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ6 = findViewById(R.id.easyQ6op1);
         if (correctQ6.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ7 = findViewById(R.id.easyQ7op4);
         if (correctQ7.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ8 = findViewById(R.id.easyQ8op2);
         if (correctQ8.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ9 = findViewById(R.id.easyQ9op4);
         if (correctQ9.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         RadioButton correctQ10 = findViewById(R.id.easyQ10op3);
         if (correctQ10.isChecked()) {
-            totalScore ++;
+            totalScore++;
         }
         displayResult(totalScore);
 
