@@ -5,7 +5,7 @@ Educational app: English learning: a quiz on phrasal verbs.
 Phrasal verbs (e.g., "drop by", "get over with", "end up", "count on", etc.) have always been a problem for English as a Foreign Language students, including me in the past, and my students in the present! So I devised an app exclusively for phrasal verb practice.
 
 Background: the app was created as PROJECT 3 for the Google Developer Challenge Scholarship (phase 1) in Jan, 2018, and carried over as project 3 for the present phase of the scholarship as permitted by Udacity (i.e. First General AMA session: "As long as your work is original work, you may carry over work from the first Phase into this Phase."). Therefore: submitted for Android Basics Nanodegree by Google at Udacity (Mar. 4. 2018, Project 3). 
-Modification since phase 1: added java code so that no more than 2 answers can be checked for CheckBox-based questions.
+Modification since phase 1: (1) fixed final toast messages so that they display the final score too; (2) changed score calculation for checkboxes so that there are no half scores, only full ones, received when both correct options are selected; (3) added a helper method to maximize selected options at two per question for each checkbox-based score calculation method to rely on, to shorten overall code; (4) fixed an Easy mode toast message’s typo; (5) removed leftover hard-coding in styles.xml and updated & referenced colors.xml instead.
 
 INTERESTING FEATURES:
 - Multiscreen app: moves into another from the main activity page depending on user choice.
